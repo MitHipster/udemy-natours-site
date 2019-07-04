@@ -1,5 +1,6 @@
 /* CSS variables */
 :root {
+	/* Colors */
 	--color-font-dark: #777;
 	--color-font-light: #fff;
 	--color-background-light: #fff;
@@ -9,22 +10,31 @@
 	--color-green-dark: #28b485;
 	--color-green-dark-alpha: rgba(40, 180, 131, 0.75);
 	--color-shadow-alpha: rgba(0, 0, 0, 0.25);
+
+	/* Fonts */
+	--base-font-size: 62.5%;
 }
 
 /* Simple reset */
-* {
+*,
+*::after,
+*::before {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: var(--base-font-size);
 }
 
 body {
+	box-sizing: border-box;
 	font-family: Lato, Helvetica, sans-serif;
 	font-weight: 400;
-	font-size: 16px;
 	line-height: 1.7;
 	color: var(--color-font-dark);
-	padding: 30px;
+	padding: 3rem;
 }
 
 .header {
@@ -43,17 +53,17 @@ body {
 
 .logo-box {
 	position: absolute;
-	top: 40px;
-	left: 40px;
+	top: 4rem;
+	left: 4rem;
 }
 
 .logo {
-	height: 35px;
+	height: 3.5rem;
 }
 
 .text-box {
 	position: relative;
-	top: 40%;
+	top: 30%;
 	text-align: center;
 }
 
@@ -62,32 +72,33 @@ body {
 	text-transform: uppercase;
 	/* Prevents slight jumping movement in the text */
 	backface-visibility: hidden;
-	margin-bottom: 60px;
+	margin-bottom: 6rem;
 }
 
 .heading-primary-main {
 	display: block;
-	font-size: 60px;
+	font-size: 6rem;
 	font-weight: 400;
-	letter-spacing: 35px;
+	letter-spacing: 3.5rem;
 	animation: move-in-left 1s ease-out;
 }
 
 .heading-primary-sub {
 	display: block;
-	font-size: 20px;
+	font-size: 2rem;
 	font-weight: 700;
-	letter-spacing: 17px;
+	letter-spacing: 1.75rem;
 	animation: move-in-right 1s ease-out;
 }
 
 .btn {
 	display: inline-block;
 	position: relative;
+	font-size: 1.6rem;
 	text-transform: uppercase;
 	text-decoration: none;
-	padding: 15px 40px;
-	border-radius: 100px;
+	padding: 1.5rem 4rem;
+	border-radius: 10rem;
 	transition-property: transform, box-shadow;
 	transition-duration: 150ms;
 	transition-timing-function: ease-out;
@@ -95,12 +106,12 @@ body {
 
 .btn:hover {
 	transform: translateY(-3px);
-	box-shadow: 0 10px 20px var(--color-shadow-alpha);
+	box-shadow: 0 1rem 2rem var(--color-shadow-alpha);
 }
 
 .btn:active {
 	transform: translateY(-1px);
-	box-shadow: 0 5px 10px var(--color-shadow-alpha);
+	box-shadow: 0 0.5rem 1rem var(--color-shadow-alpha);
 }
 
 .btn::after {
@@ -111,7 +122,7 @@ body {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	border-radius: 100px;
+	border-radius: 10rem;
 	opacity: 0.5;
 	z-index: -1;
 	transition-property: transform, opacity;
@@ -142,11 +153,11 @@ body {
 @keyframes move-in-left {
 	0% {
 		opacity: 0;
-		transform: translateX(-100px);
+		transform: translateX(-10rem);
 	}
 
 	80% {
-		transform: translateX(10px);
+		transform: translateX(1rem);
 	}
 
 	100% {
@@ -158,11 +169,11 @@ body {
 @keyframes move-in-right {
 	0% {
 		opacity: 0;
-		transform: translateX(100px);
+		transform: translateX(10rem);
 	}
 
 	80% {
-		transform: translateX(-10px);
+		transform: translateX(-1rem);
 	}
 
 	100% {
@@ -174,7 +185,7 @@ body {
 @keyframes move-in-up {
 	0% {
 		opacity: 0;
-		transform: translateY(100px);
+		transform: translateY(10rem);
 	}
 
 	100% {
