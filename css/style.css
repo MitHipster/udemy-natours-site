@@ -4,11 +4,11 @@
 	--color-font-dark: #777;
 	--color-font-light: #fff;
 	--color-background-light: #fff;
-	--color-green-light: #7ed56f;
-	--color-green-light-alpha: rgba(126, 213, 111, 0.75);
-	--color-green-medium: #55c57a;
-	--color-green-dark: #28b485;
-	--color-green-dark-alpha: rgba(40, 180, 131, 0.75);
+	--color-primary-light: #7ed56f;
+	--color-primary-light-alpha: rgba(126, 213, 111, 0.75);
+	--color-primary-medium: #55c57a;
+	--color-primary-dark: #28b485;
+	--color-primary-dark-alpha: rgba(40, 180, 131, 0.75);
 	--color-shadow-alpha: rgba(0, 0, 0, 0.25);
 
 	/* Fonts */
@@ -42,8 +42,8 @@ body {
 	height: 95vh;
 	background-image: linear-gradient(
 			to right bottom,
-			var(--color-green-light-alpha),
-			var(--color-green-dark-alpha)
+			var(--color-primary-light-alpha),
+			var(--color-primary-dark-alpha)
 		),
 		url('../img/hero.jpg');
 	background-size: cover;
