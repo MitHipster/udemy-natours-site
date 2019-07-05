@@ -1,0 +1,23 @@
+{
+	"name": "udemy-natours-site",
+	"version": "1.0.0",
+	"description": "Jonas Schmedtmann - Advanced CSS and Sass Course",
+	"main": "index.js",
+	"scripts": {
+		"compile:sass": "node-sass sass/main.scss css/style.css --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MitHipster/udemy-natours-site.git"
+	},
+	"keywords": [],
+	"author": "Tim Acker",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/MitHipster/udemy-natours-site/issues"
+	},
+	"homepage": "https://github.com/MitHipster/udemy-natours-site#readme",
+	"devDependencies": {
+		"node-sass": "^4.12.0"
+	}
+}
