@@ -16,6 +16,10 @@ $color-font-light: #fff;
 $color-background: #fff;
 $color-shadow: #000;
 
+// Transitions
+$transition-move-start: 10rem;
+$transition-move-mid: 1rem;
+
 // Simple reset
 *,
 *::after,
@@ -154,11 +158,11 @@ body {
 @keyframes move-in-left {
 	0% {
 		opacity: 0;
-		transform: translateX(-10rem);
+		transform: translateX(-$transition-move-start);
 	}
 
 	80% {
-		transform: translateX(1rem);
+		transform: translateX($transition-move-mid);
 	}
 
 	100% {
@@ -170,11 +174,11 @@ body {
 @keyframes move-in-right {
 	0% {
 		opacity: 0;
-		transform: translateX(10rem);
+		transform: translateX($transition-move-start);
 	}
 
 	80% {
-		transform: translateX(-1rem);
+		transform: translateX(-$transition-move-mid);
 	}
 
 	100% {
@@ -186,7 +190,7 @@ body {
 @keyframes move-in-up {
 	0% {
 		opacity: 0;
-		transform: translateY(10rem);
+		transform: translateY($transition-move-start);
 	}
 
 	100% {
