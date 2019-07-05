@@ -1,9 +1,6 @@
 // CSS variables
 :root {
 	// Colors
-	--color-font-dark: #777;
-	--color-font-light: #fff;
-	--color-background-light: #fff;
 	--color-primary-light: 126, 213, 111;
 	--color-primary-medium: 85, 197, 122;
 	--color-primary-dark: 40, 180, 133;
@@ -14,6 +11,9 @@
 $base-font-size: 62.5%;
 
 // Colors
+$color-font-dark: #777;
+$color-font-light: #fff;
+$color-background: #fff;
 $color-shadow: #000;
 
 // Simple reset
@@ -34,7 +34,7 @@ body {
 	font-family: Lato, Helvetica, sans-serif;
 	font-weight: 400;
 	line-height: 1.7;
-	color: var(--color-font-dark);
+	color: $color-font-dark;
 	padding: 3rem;
 }
 
@@ -69,7 +69,7 @@ body {
 }
 
 .heading-primary {
-	color: var(--color-font-light);
+	color: $color-font-light;
 	text-transform: uppercase;
 	// Prevents slight jumping movement in the text
 	backface-visibility: hidden;
@@ -137,12 +137,12 @@ body {
 }
 
 .btn--white {
-	background-color: var(--color-background-light);
-	color: var(--color-font-dark);
+	background-color: $color-background;
+	color: $color-font-dark;
 }
 
 .btn--white::after {
-	background-color: var(--color-background-light);
+	background-color: $color-background;
 }
 
 .btn--animated {

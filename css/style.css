@@ -1,7 +1,4 @@
 :root {
-  --color-font-dark: #777;
-  --color-font-light: #fff;
-  --color-background-light: #fff;
   --color-primary-light: 126, 213, 111;
   --color-primary-medium: 85, 197, 122;
   --color-primary-dark: 40, 180, 133; }
@@ -21,7 +18,7 @@ body {
   font-family: Lato, Helvetica, sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: var(--color-font-dark);
+  color: #777;
   padding: 3rem; }
 
 .header {
@@ -46,7 +43,7 @@ body {
   text-align: center; }
 
 .heading-primary {
-  color: var(--color-font-light);
+  color: #fff;
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 6rem; }
@@ -105,11 +102,11 @@ body {
   opacity: 0; }
 
 .btn--white {
-  background-color: var(--color-background-light);
-  color: var(--color-font-dark); }
+  background-color: #fff;
+  color: #777; }
 
 .btn--white::after {
-  background-color: var(--color-background-light); }
+  background-color: #fff; }
 
 .btn--animated {
   animation: move-in-up 500ms ease-out 750ms;
