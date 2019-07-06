@@ -1,0 +1,21 @@
+// CSS variables
+:root {
+	// Colors
+	--color-primary-light: 126, 213, 111;
+	--color-primary-medium: 85, 197, 122;
+	--color-primary-dark: 40, 180, 133;
+}
+
+// Sass variables
+// Fonts
+$base-font-size: 62.5%;
+
+// Colors
+$color-font-dark: #777;
+$color-font-light: #fff;
+$color-background: #fff;
+$color-shadow: #000;
+
+// Transitions
+$transition-move-start: 10rem;
+$transition-move-mid: 1rem;

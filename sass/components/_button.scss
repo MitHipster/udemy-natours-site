@@ -1,0 +1,58 @@
+.btn {
+	display: inline-block;
+	position: relative;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 1.5rem 4rem;
+	border-radius: 10rem;
+	transition-property: transform, box-shadow;
+	transition-duration: 150ms;
+	transition-timing-function: ease-out;
+
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 1rem 2rem rgba($color-shadow, 0.25);
+
+		&::after {
+			transform: scaleX(1.3) scaleY(1.6);
+			opacity: 0;
+		}
+	}
+
+	&:active {
+		transform: translateY(-1px);
+		box-shadow: 0 0.5rem 1rem rgba($color-shadow, 0.25);
+	}
+
+	&::after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 10rem;
+		opacity: 0.5;
+		z-index: -1;
+		transition-property: transform, opacity;
+		transition-duration: 400ms;
+		transition-timing-function: ease-out;
+	}
+
+	&--white {
+		background-color: $color-background;
+		color: $color-font-dark;
+
+		&::after {
+			background-color: $color-background;
+		}
+	}
+
+	&--animated {
+		animation: move-in-up 500ms ease-out 750ms;
+		// Sets button state to keyframe 0% before animating
+		animation-fill-mode: backwards;
+	}
+}

@@ -1,0 +1,18 @@
+// Simple reset
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	// Defines what 1rem equals
+	font-size: $base-font-size;
+}
+
+body {
+	box-sizing: border-box;
+	padding: 3rem;
+}

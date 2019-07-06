@@ -1,0 +1,43 @@
+@keyframes move-in-left {
+	0% {
+		opacity: 0;
+		transform: translateX(-$transition-move-start);
+	}
+
+	80% {
+		transform: translateX($transition-move-mid);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes move-in-right {
+	0% {
+		opacity: 0;
+		transform: translateX($transition-move-start);
+	}
+
+	80% {
+		transform: translateX(-$transition-move-mid);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes move-in-up {
+	0% {
+		opacity: 0;
+		transform: translateY($transition-move-start);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
