@@ -10,21 +10,6 @@
 	transition-duration: 150ms;
 	transition-timing-function: ease-out;
 
-	&:hover {
-		transform: translateY(-3px);
-		box-shadow: 0 1rem 2rem rgba($color-shadow, 0.25);
-
-		&::after {
-			transform: scaleX(1.3) scaleY(1.6);
-			opacity: 0;
-		}
-	}
-
-	&:active {
-		transform: translateY(-1px);
-		box-shadow: 0 0.5rem 1rem rgba($color-shadow, 0.25);
-	}
-
 	&::after {
 		content: '';
 		display: inline-block;
@@ -39,6 +24,21 @@
 		transition-property: transform, opacity;
 		transition-duration: 400ms;
 		transition-timing-function: ease-out;
+	}
+
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 1rem 2rem rgba($color-shadow, 0.25);
+
+		&::after {
+			transform: scaleX(1.3) scaleY(1.6);
+			opacity: 0;
+		}
+	}
+
+	&:active {
+		transform: translateY(-1px);
+		box-shadow: 0 0.5rem 1rem rgba($color-shadow, 0.25);
 	}
 
 	&--white {
