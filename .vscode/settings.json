@@ -1,3 +1,7 @@
 {
+	"prettier.stylelintIntegration": true,
+	"css.validate": false,
+	"less.validate": false,
+	"scss.validate": false,
 	"cSpell.words": ["natours"]
 }
