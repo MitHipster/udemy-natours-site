@@ -41,6 +41,39 @@ body {
     letter-spacing: 1.75rem;
     animation: move-in-right 1s ease-out; }
 
+.heading-secondary {
+  display: inline-block;
+  background-image: linear-gradient(to right, rgba(var(--color-primary-light), 1), rgba(var(--color-primary-dark), 1));
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
+  transition: all 200ms; }
+  .heading-secondary:hover {
+    transform: skewY(2deg) skewX(15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.25); }
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+.paragraph {
+  font-size: 1.6rem; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.center-text {
+  text-align: center; }
+
+.margin-bottom-sm {
+  margin-bottom: 1.5rem; }
+
+.margin-bottom-lg {
+  margin-bottom: 8rem; }
+
 @keyframes move-in-left {
   0% {
     opacity: 0;
@@ -79,8 +112,7 @@ body {
     display: table;
     clear: both; }
   .row [class^='col-'] {
-    float: left;
-    background-color: orangered; }
+    float: left; }
     .row [class^='col-']:not(:last-child) {
       margin-right: 6rem; }
   .row .col-1-of-2 {
@@ -156,3 +188,27 @@ body {
   .btn--animated {
     animation: move-in-up 500ms ease-out 750ms;
     animation-fill-mode: backwards; }
+
+.btn-text {
+  font-size: 1.6rem;
+  color: rgba(var(--color-primary-medium), 1);
+  display: inline-block;
+  text-decoration: none;
+  padding: 3px 0.5rem;
+  border-bottom: 1px solid rgba(var(--color-primary-medium), 1);
+  transition: all 150ms ease-out; }
+  .btn-text:hover {
+    color: #fff;
+    background-color: rgba(var(--color-primary-medium), 1);
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25); }
+  .btn-text:active {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25); }
+
+.section-about {
+  background-color: #f7f7f7;
+  /* Clip path minus header height - prevents white background
+	color gap */
+  margin-top: calc(75vh - 95vh);
+  padding: 35rem 0; }

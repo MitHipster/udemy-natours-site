@@ -8,13 +8,16 @@
 
 // Sass variables
 // Fonts
-$base-font-size: 62.5%;
+$font-size-base: 62.5%;
+$font-size-default: 1.6rem;
 
 // Colors
 $color-font-dark: #777;
 $color-font-light: #fff;
 $color-background: #fff;
 $color-shadow: #000;
+
+$color-gray-100: #f7f7f7;
 
 // Grid
 $grid-width: 114rem;

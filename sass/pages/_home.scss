@@ -1,0 +1,8 @@
+.section-about {
+	background-color: $color-gray-100;
+
+	/* Clip path minus header height - prevents white background
+	color gap */
+	margin-top: calc(75vh - 95vh);
+	padding: 35rem 0;
+}

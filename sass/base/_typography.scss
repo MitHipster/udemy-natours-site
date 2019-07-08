@@ -28,3 +28,41 @@ body {
 		animation: move-in-right 1s ease-out;
 	}
 }
+
+.heading-secondary {
+	display: inline-block;
+	background-image: linear-gradient(
+		to right,
+		rgba(var(--color-primary-light), 1),
+		rgba(var(--color-primary-dark), 1)
+	);
+	font-size: 3.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+
+	// Creates gradient effect inside of text
+	-webkit-background-clip: text;
+	color: transparent;
+
+	letter-spacing: 2px;
+	transition: all 200ms;
+
+	&:hover {
+		transform: skewY(2deg) skewX(15deg) scale(1.1);
+		text-shadow: 0.5rem 1rem 1rem rgba($color-shadow, 0.25);
+	}
+}
+
+.heading-tertiary {
+	font-size: 2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.paragraph {
+	font-size: $font-size-default;
+
+	&:not(:last-child) {
+		margin-bottom: 3rem;
+	}
+}
